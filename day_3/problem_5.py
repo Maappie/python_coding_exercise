@@ -3,14 +3,14 @@
 
 word = str(input("Enter a word: "))
 
-def check_word(word):
-    word_with_a = [each_word for each_word in word.split() if 'a' in each_word]
+def check_the_word(word):
+    word_with_a = [with_a for with_a in word.split() if 'a' in with_a]
     return word_with_a
 
-word_with_a = check_word(word)
+word = check_the_word(word)
 
-if word_with_a:
-    for with_a in word_with_a:
-        print(f"The word: {with_a}, contains the lettea 'a'")
+if word:
+    for each_word in word:
+        print(f"The word {each_word} have letter 'a'.")
 else:
-    print("No word with 'a' found")
+    print("There is no letter 'a' found.")
